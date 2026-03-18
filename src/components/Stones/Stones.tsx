@@ -1,19 +1,18 @@
-
-import Calacata from "../../assets/Pedra-vermelha.jpg";
-
+import Preto from "../../assets/São_Gabriel.jpg";
+import Travertino from "../../assets/Travertino.jpg";
+import Siena from "../../assets/Branco_Siena.jpg";
+import Negroni from "../../assets/Negroni.jpg";
 export default function Stones() {
   const stones = [
-    { name: "Granito", image: Calacata },
-    { name: "Mármore", image: Calacata },
-    { name: "Quartzo", image: Calacata },
-    { name: "Travertino", image: Calacata },
+    { name: "Granito Branco Siena", image: Siena },
+    { name: "Granito Preto São Gabriel", image: Preto },
+    { name: "Quartzo Negroni", image: Negroni },
+    { name: "Mármore Travertino", image: Travertino },
   ];
 
   return (
-    <section className="py-16 md:py-24 ">
+    <section className="py-16 md:py-24 " id="materiais">
       <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-
-        {/* TÍTULO */}
         <div className="text-center mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]">
             <span className="text-black">Alguns </span>

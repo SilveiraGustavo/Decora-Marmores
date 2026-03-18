@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="py-16 md:py-24 ">
+    <section className="py-16 md:py-24 " id="sobre">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-10 lg:px-16">
 
         <div>

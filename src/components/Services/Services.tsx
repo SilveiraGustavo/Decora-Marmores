@@ -1,7 +1,7 @@
 import {
   CookingPot,
   Bath,
-  Layers,
+  WavesLadder ,
   DoorOpen,
   Flame,
   Monitor
@@ -11,14 +11,14 @@ export default function Services() {
   const services = [
     { icon: CookingPot, title: "Bancadas de Cozinha" },
     { icon: Bath, title: "Banheiros" },
-    { icon: Layers, title: "Escadas" },
+    { icon: WavesLadder , title: "Escadas" },
     { icon: DoorOpen, title: "Soleiras e Peitoris" },
     { icon: Flame, title: "Lareiras" },
     { icon: Monitor, title: "Projetos Sob Medida" },
   ];
 
   return (
-    <section className="py-16 md:py-24 ">
+    <section className="py-16 md:py-24 " id="servicos">
       <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
 
         

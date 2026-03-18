@@ -1,11 +1,44 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import Button from "../Button/Button";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 export default function Contact() {
-  return (
-    <section className="py-16 md:py-24 ">
-      <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+  const form = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
 
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!form.current) return;
+
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          alert("Mensagem enviada com sucesso!");
+          form.current?.reset();
+          setLoading(false);
+        },
+        (error) => {
+          console.error(error);
+          alert("Erro ao enviar mensagem.");
+          setLoading(false);
+        }
+      );
+  };
+
+  return (
+    <section className="py-16 md:py-24" id="contato">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+        
         {/* TÍTULO */}
         <div className="text-center mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]">
@@ -18,48 +51,65 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-10">
 
           {/* FORMULÁRIO */}
-          <form className="bg-white p-6 rounded-xl shadow-sm space-y-4">
-            
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="bg-white p-6 rounded-xl shadow-sm space-y-4"
+          >
             <input
               type="text"
+              name="name"
               placeholder="Seu nome"
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-[#b81716]"
             />
 
             <input
               type="email"
+              name="email"
               placeholder="Seu email"
+              required
+              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-[#b81716]"
+            />
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Assunto"
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-[#b81716]"
             />
 
             <input
               type="tel"
+              name="phone"
               placeholder="Seu telefone"
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-[#b81716]"
             />
 
             <textarea
+              name="message"
               placeholder="Descreva seu projeto"
               rows={4}
+              required
               className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:border-[#b81716]"
             />
 
-            <Button variant="primary">
-              Enviar mensagem
+            <Button variant="primary" type="submit">
+              {loading ? "Enviando..." : "Enviar mensagem"}
             </Button>
           </form>
-
-          {/* INFORMAÇÕES */}
           <div className="flex flex-col justify-center gap-6">
 
             <div className="flex items-center gap-4">
               <Phone className="text-[#b81716]" />
-              <span>(37) 99999-9999</span>
+              <span>(35) 99852-2695</span>
             </div>
 
             <div className="flex items-center gap-4">
               <Mail className="text-[#b81716]" />
-              <span>contato@marmoraria.com</span>
+              <span>contato@decoramarmores.com</span>
             </div>
 
             <div className="flex items-center gap-4">
@@ -67,20 +117,21 @@ export default function Contact() {
               <span>Alpinópolis - MG</span>
             </div>
 
+            {/* WHATSAPP */}
             <div className="mt-4">
-              <a
-                href="https://wa.me/5537999999999"
-                target="_blank"
-                className="inline-block bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition"
-              >
-                Falar no WhatsApp
-              </a>
+              <Button
+                as="a"
+                  href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="ghost">
+                  Falar no WhatsApp
+              </Button>
             </div>
 
           </div>
 
         </div>
-
       </div>
     </section>
   );

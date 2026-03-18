@@ -49,11 +49,18 @@ export default function Hero() {
             animate-[fadeUp_0.6s_ease-out_0.4s_forwards]
           ">
             <Button variant='primary'>
-              Solicitar Orçamento
+               <a
+                href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold"
+              >
+                Solicitar Orçamento
+              </a>
             </Button>
 
             <Button variant="outline">
-              Conheça nossos materiais
+              Conheça alguns materiais
             </Button>
           </div>
 

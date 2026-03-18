@@ -34,8 +34,13 @@ export default function BtnContact() {
         </p>
 
         <div className="flex justify-center">
-          <Button variant="secondary">
-            Falar com um especialista
+          <Button
+            as="a"
+            href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant='secondary'>
+               Fale com um especialista
           </Button>
         </div>
 

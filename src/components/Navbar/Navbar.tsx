@@ -17,17 +17,33 @@ function Navbar() {
 
         
         <ul className="hidden lg:flex gap-8">
-          <li className="hover:text-red-600 cursor-pointer font-semibold">Início</li>
-          <li className="hover:text-red-600 cursor-pointer font-semibold">Sobre</li>
-          <li className="hover:text-red-600 cursor-pointer font-semibold">Materiais</li>
-          <li className="hover:text-red-600 cursor-pointer font-semibold">Serviços</li>
-          <li className="hover:text-red-600 cursor-pointer font-semibold">Projetos</li>
-          <li className="hover:text-red-600 cursor-pointer font-semibold">Contato</li>
+          <li>
+            <a href="#sobre" className="hover:text-red-600 font-semibold">Sobre</a>
+          </li>
+          <li>
+            <a href="#materiais" className="hover:text-red-600 font-semibold">Materiais</a>
+          </li>
+          <li>
+            <a href="#servicos" className="hover:text-red-600 font-semibold">Serviços</a>
+          </li>
+          <li>
+            <a href="#projetos" className="hover:text-red-600 font-semibold">Projetos</a>
+          </li>
+          <li>
+            <a href="#contato" className="hover:text-red-600 font-semibold">Contato</a>
+          </li>
         </ul>
 
         
         <div className="hidden lg:block">
-          <Button>Solicitar Orçamento</Button>
+          <Button
+            as="a"
+            href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Solicitar Orçamento
+          </Button>
         </div>
 
         
@@ -51,15 +67,31 @@ function Navbar() {
         `}
         >
             <ul className="flex flex-col items-center gap-6 font-semibold bg-white shadow-md">
-                <li className="hover:text-red-600 cursor-pointer">Início</li>
-                <li className="hover:text-red-600 cursor-pointer">Sobre</li>
-                <li className="hover:text-red-600 cursor-pointer">Materiais</li>
-                <li className="hover:text-red-600 cursor-pointer">Serviços</li>
-                <li className="hover:text-red-600 cursor-pointer">Projetos</li>
-                <li className="hover:text-red-600 cursor-pointer">Contato</li>
+            <li>
+              <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</a>
+            </li>
+            <li>
+              <a href="#materiais" onClick={() => setMenuOpen(false)}>Materiais</a>
+            </li>
+            <li>
+              <a href="#servicos" onClick={() => setMenuOpen(false)}>Serviços</a>
+            </li>
+            <li>
+              <a href="#projetos" onClick={() => setMenuOpen(false)}>Projetos</a>
+            </li>
+            <li>
+              <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
+            </li>
 
-                <Button>Solicitar Orçamento</Button>
-            </ul>
+            <Button
+              as="a"
+              href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar Orçamento
+            </Button>
+          </ul>
         </div>
 
     </nav>

@@ -1,16 +1,19 @@
+import Escadas from "../../assets/Escada.jpg";
+import Cozinha from "../../assets/Cozinha2.jpg";
+import Banheiro from "../../assets/Cuba.jpg";
+import Marrom from "../../assets/Cozinha_tabaco.jpg";
 
-import Calacata from "../../assets/Pedra-vermelha.jpg";
 
 export default function Stones() {
   const stones = [
-    { name: "Granito", image: Calacata },
-    { name: "Mármore", image: Calacata },
-    { name: "Quartzo", image: Calacata },
-    { name: "Travertino", image: Calacata },
+    { name: "Escadas", image: Escadas },
+    { name: "Cozinha", image: Cozinha },
+    { name: "Painel", image: Marrom },
+    { name: "Cuba esculpida", image: Banheiro },
   ];
 
   return (
-    <section className="py-16 md:py-24 ">
+    <section className="py-16 md:py-24 " id="projetos">
       <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
 
         {/* TÍTULO */}
@@ -36,18 +39,20 @@ export default function Stones() {
                 cursor-pointer
               "
             >
-              {/* IMAGEM */}
+             <div className="w-full aspect-[4/3] overflow-hidden">
               <img
                 src={stone.image}
                 alt={stone.name}
                 className="
                   w-full
-                  h-64
+                  h-full
                   object-cover
+                  object-center
                   transition-transform duration-500
                   group-hover:scale-110
                 "
               />
+            </div>
 
               
               <div className="
