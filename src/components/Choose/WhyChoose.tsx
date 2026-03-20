@@ -16,7 +16,7 @@ export default function WhyChoose() {
       <div className="max-w-5xl mx-auto px-6 md:px-10 lg:px-16">
 
         <div className="text-center mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold" data-aos="fade-up">
             <span className="text-black">Por que </span>
             <span className="text-[#b81716]">escolher nossa marmoraria?</span>
           </h2>

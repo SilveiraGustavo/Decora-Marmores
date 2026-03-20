@@ -23,7 +23,7 @@ export default function Services() {
 
         
         <div className="text-center mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]" data-aos="fade-up">
             <span className="text-black">Nossos </span>
             Serviços
           </h2>
@@ -39,7 +39,7 @@ export default function Services() {
           md:grid-cols-3
           lg:grid-cols-3
           gap-6
-        ">
+          " data-aos="fade-left">
 
           {services.map((service, index) => {
             const Icon = service.icon;

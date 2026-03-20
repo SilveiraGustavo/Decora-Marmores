@@ -12,8 +12,20 @@ import Footer from './components/Footer/Footer';
 // Imagem utilizada no fundo do site
 import Fundos from '../src/assets/Calacata-fundo.jpg';
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true, 
+    });
+  }, []);
+
   return (
     <div className='bg-cover bg-center min-h-screen'
       style={{ backgroundImage: `url(${Fundos})` }}>
@@ -27,11 +39,8 @@ function App() {
       <BtnContact />
       <Contact />
       <Footer />
-      
     </div>
-      
-   
-  )
+  );
 }
 
 export default App

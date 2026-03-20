@@ -4,29 +4,26 @@ import Banheiro from "../../assets/Cuba.jpg";
 import Marrom from "../../assets/Cozinha_tabaco.jpg";
 
 
+
 export default function Stones() {
   const stones = [
-    { name: "Escadas", image: Escadas },
+    { name: "Escada", image: Escadas },
     { name: "Cozinha", image: Cozinha },
-    { name: "Painel", image: Marrom },
+    { name: "Cozinha Marrrom Tabaco", image: Marrom },
     { name: "Cuba esculpida", image: Banheiro },
   ];
 
   return (
     <section className="py-16 md:py-24 " id="projetos">
       <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
-
-        {/* TÍTULO */}
         <div className="text-center mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]" data-aos="fade-up">
            <span className="text-black">Alguns </span>
              de Nossos Projetos
           </h2> 
           <div className="w-20 h-[3px] bg-[#b81716] mx-auto mt-3"></div>
         </div>
-
-        {/* GRID */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-aos="fade-up-right">
 
           {stones.map((stone, index) => (
             <div

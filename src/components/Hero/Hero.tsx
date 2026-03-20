@@ -53,7 +53,7 @@ export default function Hero() {
                 href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold"
+                className="font-semibold "
               >
                 Solicitar Orçamento
               </a>

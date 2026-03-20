@@ -7,7 +7,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-10 lg:px-16">
 
         <div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716] mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716] mb-4" data-aos="fade-up">
             <span className="text-black">Sobre </span>
             Nós
           </h2>

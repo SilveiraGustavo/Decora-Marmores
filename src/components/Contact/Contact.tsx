@@ -41,7 +41,7 @@ export default function Contact() {
         
         {/* TÍTULO */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]" data-aos="fade-up">
             <span className="text-black">Entre </span>
             em Contato
           </h2>

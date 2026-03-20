@@ -12,9 +12,9 @@ export default function Stones() {
 
   return (
     <section className="py-16 md:py-24 " id="materiais">
-      <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-16" >
         <div className="text-center mb-14">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#b81716]" data-aos="fade-up">
             <span className="text-black">Alguns </span>
             Materiais
           </h2>
@@ -22,7 +22,7 @@ export default function Stones() {
         </div>
 
         {/* GRID */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 " data-aos="fade-right">
 
           {stones.map((stone, index) => (
             <div
