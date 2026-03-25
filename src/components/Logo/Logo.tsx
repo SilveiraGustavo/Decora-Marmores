@@ -15,6 +15,7 @@ function Logo() {
           w-auto
           object-contain
         "
+        loading='lazy'
       />
     </div>
   );

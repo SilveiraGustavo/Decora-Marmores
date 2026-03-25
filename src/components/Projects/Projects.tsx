@@ -1,7 +1,7 @@
-import Escadas from "../../assets/Escada.jpg";
-import Cozinha from "../../assets/Cozinha2.jpg";
-import Banheiro from "../../assets/Cuba.jpg";
-import Marrom from "../../assets/Cozinha_tabaco.jpg";
+import Escadas from "../../assets/Servicos/Escada.jpg";
+import Cozinha from "../../assets/Servicos/Cozinha2.jpg";
+import Banheiro from "../../assets/Servicos/Cuba.jpg";
+import Marrom from "../../assets/Servicos/Cozinha_tabaco.jpg";
 
 
 
@@ -48,6 +48,7 @@ export default function Stones() {
                   transition-transform duration-500
                   group-hover:scale-110
                 "
+                loading="lazy"
               />
             </div>
 

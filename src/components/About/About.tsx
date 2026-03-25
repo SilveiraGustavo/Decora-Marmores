@@ -61,6 +61,7 @@ export default function About() {
               rounded-xl
               shadow-lg
             "
+            loading="lazy"
           />
         </div>
 

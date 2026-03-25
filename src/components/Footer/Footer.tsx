@@ -63,8 +63,6 @@ export default function Footer() {
           </div>
 
         </div>
-
-        {/* LINHA FINAL */}
         <div className="border-t border-gray-300 mt-8 pt-6 text-center text-gray-300 text-sm">
           © {new Date().getFullYear()} Decora Mármores. Todos os direitos reservados.
         </div>

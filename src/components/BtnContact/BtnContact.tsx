@@ -7,7 +7,6 @@ export default function BtnContact() {
       className="relative py-20 bg-cover bg-center"
       style={{ backgroundImage: `url(${Fundo})` }}
     >
-      {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
