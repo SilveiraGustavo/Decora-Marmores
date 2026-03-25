@@ -1,9 +1,12 @@
 import Button from '../Button/Button';
+import Cozinha from "../../assets/Cozinha-Header.png";
 
 export default function Hero() {
   return (
-    <section className="h-screen bg-cover bg-center flex items-center">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+    <section className="h-screen bg-cover bg-center flex items-center" style={{
+        backgroundImage: `url(${Cozinha})`,
+      }}>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-10 lg:px-16">
 
         <div className="max-w-xl">
 
@@ -38,8 +41,8 @@ export default function Hero() {
             translate-y-6
             animate-[fadeUp_0.6s_ease-out_0.2s_forwards]
           ">
-            Há mais de 20 anos entregando qualidade, precisão
-            e confiança em cada projeto.
+            Há mais de 20 anos entregando qualidade, <br />
+            precisão e confiança em cada projeto.
           </p>
 
           <div className="

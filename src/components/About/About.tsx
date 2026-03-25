@@ -1,9 +1,24 @@
 import Trabalhador from "../../assets/Trabalhador.jpg";
-import { Check } from "lucide-react";
+import { FaAward, FaUsers, FaCogs } from "react-icons/fa";
 
 export default function About() {
+  const aboutItems = [
+    {
+      text: "20 anos de experiência",
+      icon: FaAward,
+    },
+    {
+      text: "Equipe qualificada",
+      icon: FaUsers,
+    },
+    {
+      text: "Tecnologia moderna",
+      icon: FaCogs,
+    },
+  ];
+
   return (
-    <section className="py-16 md:py-24 " id="sobre">
+    <section className="py-16 md:py-24" id="sobre">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6 md:px-10 lg:px-16">
 
         <div>
@@ -20,25 +35,18 @@ export default function About() {
           </p>
 
           <ul className="space-y-4">
-            <li className="flex items-center gap-3">
-              <Check size={20} className="text-[#b81716]" />
-              <span>
-                <strong className="text-[#b81716]">20 anos</strong> de experiência
-              </span>
-            </li>
+            {aboutItems.map((item, index) => {
+              const Icon = item.icon;
 
-            <li className="flex items-center gap-3">
-              <Check size={20} className="text-[#b81716]" />
-              <span>Equipe qualificada</span>
-            </li>
-
-            <li className="flex items-center gap-3">
-              <Check size={20} className="text-[#b81716]" />
-              <span>Tecnologia moderna</span>
-            </li>
+              return (
+                <li key={index} className="flex items-center gap-3">
+                  <Icon className="text-[#b81716]" />
+                  <span>{item.text}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
-
 
         <div className="w-full">
           <img

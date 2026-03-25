@@ -1,20 +1,21 @@
 import {
   CookingPot,
   Bath,
-  WavesLadder ,
   DoorOpen,
   Flame,
-  Monitor
 } from "lucide-react";
+
+import { PiStepsLight } from "react-icons/pi";
+import { FaRulerCombined } from "react-icons/fa";
 
 export default function Services() {
   const services = [
     { icon: CookingPot, title: "Bancadas de Cozinha" },
     { icon: Bath, title: "Banheiros" },
-    { icon: WavesLadder , title: "Escadas" },
+    { icon: PiStepsLight, title: "Escadas" },
     { icon: DoorOpen, title: "Soleiras e Peitoris" },
     { icon: Flame, title: "Lareiras" },
-    { icon: Monitor, title: "Projetos Sob Medida" },
+    { icon: FaRulerCombined, title: "Projetos Sob Medida" },
   ];
 
   return (

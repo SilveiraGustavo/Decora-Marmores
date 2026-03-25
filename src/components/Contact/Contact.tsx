@@ -3,6 +3,8 @@ import Button from "../Button/Button";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 
+import { FaWhatsapp } from 'react-icons/fa'; 
+
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
@@ -114,7 +116,7 @@ export default function Contact() {
 
             <div className="flex items-center gap-4">
               <MapPin className="text-[#b81716]" />
-              <span>Alpinópolis - MG</span>
+              <span>Rua Santa Edvirgens, nº 25 – Vila Betânia, Alpinópolis – MG</span>
             </div>
 
             {/* WHATSAPP */}
@@ -125,6 +127,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="ghost">
+                  <FaWhatsapp className="text-2xl" />
                   Falar no WhatsApp
               </Button>
             </div>

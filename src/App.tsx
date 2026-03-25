@@ -1,4 +1,5 @@
 import './App.css'
+import Button from './components/Button/Button';
 import About from './components/About/About';
 import WhyChoose from './components/Choose/WhyChoose';
 import Hero from './components/Hero/Hero';
@@ -16,7 +17,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
+import { FaWhatsapp } from 'react-icons/fa'; 
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,9 @@ function App() {
   return (
     <div className='bg-cover bg-center min-h-screen'
       style={{ backgroundImage: `url(${Fundos})` }}>
+      <Button variant="link" as="a" href="https://wa.me/5535998522695?text=Olá, gostaria de um orçamento!" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp className="text-2xl" />
+      </Button>
       <Navbar />
       <Hero />
       <About />

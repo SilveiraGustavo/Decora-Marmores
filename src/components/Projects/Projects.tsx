@@ -10,7 +10,7 @@ export default function Stones() {
     { name: "Escada", image: Escadas },
     { name: "Cozinha", image: Cozinha },
     { name: "Cozinha Marrrom Tabaco", image: Marrom },
-    { name: "Cuba esculpida", image: Banheiro },
+    { name: "Lavabos", image: Banheiro },
   ];
 
   return (

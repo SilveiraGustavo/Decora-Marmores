@@ -46,7 +46,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-2">
                 <MapPin size={16} />
-                <span>Alpinópolis - MG</span>
+                <span>Rua Santa Edvirgens, nº 25 – Vila Betânia, Alpinópolis – MG</span>
               </div>
 
               <a
