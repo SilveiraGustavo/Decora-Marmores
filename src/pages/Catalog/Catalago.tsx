@@ -11,7 +11,7 @@ import Button from "../../components/Button/Button";
 import Fundos from "../../assets/Calacata-fundo.jpg";
 import Sao_Gabriel from "../../assets/stones/Sao_Gabriel.jpg";
 import Travertino from "../../assets/stones/Travertino.jpg";
-import Amarelo_Ornamental from "../../assets/stones/Ornamental.jpg";
+import Ornamental from "../../assets/stones/Ornamental.jpg";
 
 // Icones 
 import { FaWhatsapp } from 'react-icons/fa';
@@ -22,7 +22,7 @@ export default function Catalogo() {
   const [categoria, setCategoria] = useState<Categoria>("Granito");
 
   const catalogo: Record<Categoria, { nome: string; imagem: string }[]> = {
-    Granito: [{ nome: "Preto São Gabriel", imagem: Sao_Gabriel }, { nome: "Amarelo Ornamental", imagem: Amarelo_Ornamental }, { nome: "Vermelho Absoluto", imagem: Sao_Gabriel }, { nome: "Cinza Corumbá", imagem: Sao_Gabriel }],
+    Granito: [{ nome: "Preto São Gabriel", imagem: Sao_Gabriel }, { nome: "Amarelo Ornamental", imagem: Ornamental }, { nome: "Vermelho Absoluto", imagem: Sao_Gabriel }, { nome: "Cinza Corumbá", imagem: Sao_Gabriel }],
     Mármore: [{ nome: "Travertino", imagem: Travertino }],
     Quartzo: [{ nome: "Branco Prime", imagem: Sao_Gabriel }],
     Lâminas: [{ nome: "Dekton Kelya", imagem: Sao_Gabriel }],
