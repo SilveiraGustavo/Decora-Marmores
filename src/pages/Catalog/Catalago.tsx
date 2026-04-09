@@ -9,9 +9,9 @@ import Button from "../../components/Button/Button";
 
 // Imagens 
 import Fundos from "../../assets/Calacata-fundo.jpg";
-import Sao_Gabriel from "../../assets/stones/Sao_Gabriel.jpg";
-import Travertino from "../../assets/stones/Travertino.jpg";
-import Ornamental from "../../assets/stones/Ornamental.jpg";
+import Sao_Gabriel from "../../assets/Stones/Sao_Gabriel.jpg";
+import Travertino from "../../assets/Stones/Travertino.jpg";
+import Ornamental from "../../assets/Stones/Ornamental.jpg";
 
 // Icones 
 import { FaWhatsapp } from 'react-icons/fa';
