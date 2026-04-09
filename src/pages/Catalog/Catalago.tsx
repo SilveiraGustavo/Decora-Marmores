@@ -10,7 +10,7 @@ import Button from "../../components/Button/Button";
 // Imagens 
 import Fundos from "../../assets/Calacata-fundo.jpg";
 import Sao_Gabriel from "../../assets/stones/Sao_Gabriel.jpg";
-import Travertino from "../../assets/stones/travertino.jpg";
+import Travertino from "../../assets/stones/Travertino.jpg";
 import Amarelo_Ornamental from "../../assets/stones/Ornamental.jpg";
 
 // Icones 
