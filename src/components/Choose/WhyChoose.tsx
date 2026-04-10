@@ -51,7 +51,7 @@ export default function WhyChoose() {
         <div className="grid sm:grid-cols-2 gap-6" data-aos="fade-up-left">
 
           {items.map((item, index) => {
-            const Icon = item.icon; // ✅ CORRETO
+            const Icon = item.icon; 
 
             return (
               <div

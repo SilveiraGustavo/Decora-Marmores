@@ -9,10 +9,19 @@ import Button from "../../components/Button/Button";
 
 // Imagens 
 import Fundos from "../../assets/Calacata-fundo.jpg";
+import Cinza_Corumba from "../../assets/Stones/Cinza-Corumba.jpg";
+import Branco_Siena from "../../assets/Stones/Branco_Siena.jpg";
+import Branco_Itaunas from "../../assets/Stones/Branco-Itaunas.jpg";
+import Branco_Dallas from "../../assets/Stones/Branco-Dallas.jpg";
+import Verde_Ubatuba from "../../assets/Stones/Verde-Ubatuba.jpg";
+import Verde_Perola from "../../assets/Stones/Granito-Verde-Perola.jpg";
+import Ocre_Itabira from "../../assets/Stones/ocre-itabira.jpg";
+import Marmore_Branco from "../../assets/Stones/marmore-branco-comum.jpg";
 import Sao_Gabriel from "../../assets/Stones/Sao_Gabriel.jpg";
 import Travertino from "../../assets/Stones/Travertino.jpg";
 import Ornamental from "../../assets/Stones/Ornamental.jpg";
-
+import Marmore_Crema_Marfil from "../../assets/Stones/Crema-Marfil.jpg";
+import Marmore_Pinta_Verde from "../../assets/Stones/Pinta-Verde.jpg";
 // Icones 
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -22,8 +31,8 @@ export default function Catalogo() {
   const [categoria, setCategoria] = useState<Categoria>("Granito");
 
   const catalogo: Record<Categoria, { nome: string; imagem: string }[]> = {
-    Granito: [{ nome: "Preto São Gabriel", imagem: Sao_Gabriel }, { nome: "Amarelo Ornamental", imagem: Ornamental }, { nome: "Vermelho Absoluto", imagem: Sao_Gabriel }, { nome: "Cinza Corumbá", imagem: Sao_Gabriel }],
-    Mármore: [{ nome: "Travertino", imagem: Travertino }],
+  Granito: [{ nome: "Preto São Gabriel", imagem: Sao_Gabriel },{nome: "Branco Itaúnas", imagem: Branco_Itaunas},{nome: "Branco Dallas", imagem: Branco_Dallas},{ nome: "Amarelo Ornamental", imagem: Ornamental },{ nome: "Verde Pérola", imagem: Verde_Perola },{ nome: "Cinza Corumbá", imagem: Cinza_Corumba }, { nome: "Branco Siena", imagem: Branco_Siena }, { nome: "Verde Ubatuba", imagem: Verde_Ubatuba }, { nome: "Ocre Itabira", imagem: Ocre_Itabira }],
+    Mármore: [{ nome: "Travertino", imagem: Travertino },{ nome: "Mármore Pinta Verde", imagem: Marmore_Pinta_Verde }, { nome: "Mármore Branco", imagem: Marmore_Branco }, { nome: "Crema Marfil", imagem: Marmore_Crema_Marfil }],
     Quartzo: [{ nome: "Branco Prime", imagem: Sao_Gabriel }],
     Lâminas: [{ nome: "Dekton Kelya", imagem: Sao_Gabriel }],
   };
