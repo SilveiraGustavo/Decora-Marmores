@@ -33,7 +33,6 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-300 text-sm">
               <li className="hover:text-white cursor-pointer"><button onClick={() => handleNavigation("servicos")}>Serviços</button></li>
               <li className="hover:text-white cursor-pointer"><button onClick={() => navigate("/catalogo")}>Catálogo</button></li>
-              <li className="hover:text-white cursor-pointer"><button onClick={() => handleNavigation("servicos")}>Serviços</button></li>
               <li className="hover:text-white cursor-pointer"><button onClick={() => handleNavigation("projetos")}>Projetos</button></li>
               <li className="hover:text-white cursor-pointer"><button onClick={() => handleNavigation("contato")}>Contato</button></li>
             </ul>

@@ -1,7 +1,9 @@
 import Button from '../Button/Button';
 import Cozinha from "../../assets/Cozinha-Header.png";
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+  const navigate = useNavigate();
   return (
     <section className="h-screen bg-cover bg-center flex items-center" style={{
         backgroundImage: `url(${Cozinha})`,
@@ -62,7 +64,7 @@ export default function Hero() {
               </a>
             </Button>
 
-            <Button variant="outline">
+            <Button variant="outline" onClick= {() => navigate('/catalogo')}>
               Conheça alguns materiais
             </Button>
           </div>
